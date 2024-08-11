@@ -9,6 +9,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--backgroundcolor);
+    background-image: url(./images/fundopg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -22,10 +25,28 @@ body {
     position: relative;
 }
 
+.homelink img {
+    width: 150px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 420px;
+    top: -10px;
+}
+
+.homelink:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
 h1 {
     color: var(--colortitle);
     font-size: 48px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    font-family: 'Chau Philomene One' ;
 }
 
 .content {
@@ -34,15 +55,36 @@ h1 {
     gap: 50px;
 }
 
-.item {
-    text-align: center;
-}
+
 
 .item img {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
+    margin-right: -50px;
+    margin-bottom: 200px;
+    cursor: pointer;
 }
+
+.item2 img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -50px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.item2 img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 
 
 
