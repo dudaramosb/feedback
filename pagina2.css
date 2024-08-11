@@ -1,0 +1,48 @@
+:root {
+    --backgroundcolor: #314413;
+    --colortitle: #ffca30;
+    --white:#ffffff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundcolor);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: var(--colortitle);
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
