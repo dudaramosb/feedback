@@ -1,0 +1,87 @@
+body {
+    margin: 25px 150px;
+    padding: 50px 150px;
+    background-color:#FFE26E;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    align-items: center;
+    border: 1px red solid;
+}
+
+:root {
+    --yellow: #FFE26E;
+    --green1: #244609;
+    --green2: #2F5812;
+    --green3: #3E7518;
+    --white:  #FFFFFF;
+    --black:  #000000;
+}
+
+.titulo {
+    color: #244609;
+    font-family: 'Chau Philomene One', sans-serif;
+    border: 1px red solid;
+    width: 100%;
+    font-size: 90px; 
+    text-align: center;
+    text-shadow: 2px 2px var(--black);
+    margin: 0;
+}
+
+.conteudo p {
+    width: 500px;
+}
+
+.sapo {
+    border: 1px red solid;
+    float: right;
+    max-width: 300px;
+}
+
+.homeicon img {
+    border: 1px red solid;
+    width: 70px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.info1 {
+    color: #000000;
+    border: 1px red solid;
+    height: 55px;
+    width: 95px;
+    font-size: 25px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.info2 {
+    color: #000000;
+    border: 1px red solid;
+    height: 55px;
+    width: 155px;
+    font-size: 25px;
+    margin: 50px;
+    float: right;
+}
+
+.conteudo {
+    color: #000000;
+    border: 1px red solid;
+    height: 55px;
+    width: 300px;
+    font-size: 25px;
+    margin: 50px;
+}
+
+
+.afirmacao {
+    color: #000000;
+    border: 1px red solid;
+    height: 110px;
+    width: 350px;
+    font-size: 25px;
+    margin: 50px;
+    float: right;
+}

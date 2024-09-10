@@ -1,0 +1,124 @@
+:root {
+    --yellow: #ffca30;
+    --green: #314413;
+    --white: #EAE8ED;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/images/aguia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    background-color: var(--green);
+    overflow: hidden;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+    left: 10px; /* Ajusta a posição para a esquerda */
+}
+
+.homelink img {
+    width: 200px; /* Ajusta o tamanho da imagem */
+    height: auto;
+}
+
+.terci {
+    padding: 2rem; /* Ajusta o padding para melhor responsividade */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.terci h3 {
+    color: var(--yellow);
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    text-align: center;
+    font-family: 'Chau Philomene One', sans-serif;
+    padding-bottom: 2rem;
+}
+
+.tercicard {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    color: var(--green);
+    padding: 2rem;
+    max-width: 800px; /* Limita a largura do cartão */
+    margin: 2rem auto; /* Centraliza o cartão e adiciona margem */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    text-align: center;
+}
+
+.navegacao {
+    position: fixed; 
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem; /* Adiciona padding para navegação */
+}
+
+.anterior, .proximo {
+    display: inline-block;
+    padding: 16px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(240, 196, 2, 0.814);
+    border-radius: 50%;
+    text-decoration: none;
+    user-select: none;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(103, 214, 105, 0.8);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .homelink img {
+        width: 150px;
+    }
+
+    .terci h3 {
+        font-size: 2rem;
+    }
+
+    .tercicard {
+        padding: 1rem;
+    }
+
+    .anterior, .proximo {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homelink img {
+        width: 120px;
+    }
+
+    .terci h3 {
+        font-size: 1.5rem;
+    }
+
+    .tercicard {
+        padding: 0.5rem;
+    }
+
+    .anterior, .proximo {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

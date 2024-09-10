@@ -1,0 +1,86 @@
+:root {
+    --yellow: #ffca30;
+    --green: #314413;
+    --white: #EAE8ED;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../images/gafanhot.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--green);
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: cover; 
+    }
+
+    .prima {
+        padding: 4rem; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+
+    .prima h3 {
+        font-size: 3rem; 
+    }
+
+    .primacard {
+        flex-direction: row; 
+        gap: 2rem; 
+        max-width: 1200px; 
+        margin: 2rem auto; 
+    }
+
+    .primacard p {
+        font-size: 1.125rem; 
+        max-width: 800px;
+    }
+
+    .navegacao {
+        margin-top: 2rem; 
+    }
+
+    .anterior, .proximo {
+        font-size: 1.75rem; 
+        padding: 16px; 
+    }
+}
+
+
+@media (min-width: 1920px) {
+    body {
+        background-size: contain; 
+    }
+
+    .prima {
+        padding: 6rem; 
+    }
+
+    .prima h3 {
+        font-size: 4rem; 
+    }
+
+    .primacard {
+        gap: 3rem; 
+    }
+
+    .primacard p {
+        font-size: 1.25rem; 
+    }
+
+    .navegacao {
+        margin-top: 3rem;
+    }
+
+    .anterior, .proximo {
+        font-size: 2rem; 
+        padding: 20px; 
+    }
+}
