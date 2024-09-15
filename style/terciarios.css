@@ -12,32 +12,35 @@ body {
     background-image: url(/images/aguia.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    background-size: cover; 
     background-color: var(--green);
     overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
+    background-size: 100vw;
 }
 
 .homelink {
     position: absolute;
     text-decoration: none;
     top: 10px;
-    left: 10px; /* Ajusta a posição para a esquerda */
+    left: 10px; 
 }
 
 .homelink img {
-    width: 200px; /* Ajusta o tamanho da imagem */
+    width: 200px; 
     height: auto;
 }
 
 .terci {
-    padding: 2rem; /* Ajusta o padding para melhor responsividade */
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 .terci h3 {
     color: var(--yellow);
-    font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    font-size: 2.5rem; 
     text-align: center;
     font-family: 'Chau Philomene One', sans-serif;
     padding-bottom: 2rem;
@@ -48,11 +51,11 @@ body {
     border-radius: 10px;
     color: var(--green);
     padding: 2rem;
-    max-width: 800px; /* Limita a largura do cartão */
-    margin: 2rem auto; /* Centraliza o cartão e adiciona margem */
+    max-width: 800px; 
+    margin: 2rem auto; 
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-size: 1rem; 
     text-align: center;
 }
 
@@ -64,7 +67,7 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem; /* Adiciona padding para navegação */
+    padding: 0 1rem; 
 }
 
 .anterior, .proximo {
@@ -84,7 +87,6 @@ body {
     background-color: rgba(103, 214, 105, 0.8);
 }
 
-/* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .homelink img {
         width: 150px;

@@ -1,93 +1,162 @@
-:root{
-    --green: #314413;
-    --yellow: #ffca30;
-    --white: #fff;
-
-
+:root {
+    --backgroundcolor: #314413;
+    --colortitle: #ffca30;
+    --white:#ffffff;
 }
+
+
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: var(--green);
-}
-
-header {
-    background-color: var(--yellow);
-    color: var(--green);
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-main {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.wordsearch-container {
-    margin: 20px;
-}
-
-.wordsearch {
-    display: grid;
-    grid-template-columns: repeat(5, 50px);
-    grid-gap: 2px;
-    background-color: var(--white);
-    border-radius: 8px;
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.row {
-    display: contents;
-}
-
-.cell {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    border: 2px solid var(--yellow);
-    border-radius: 4px;
-    font-size: 1.5rem;
+td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
     font-weight: bold;
-    color: var(--green);
-    transition: background-color 0.3s, color 0.3s;
+    color: #333;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.cell:hover {
-    background-color: var(--yellow);
-    color: var(--green);
+td:hover {
+    background-color: #ffa500;
+    color: white;
+    transform: scale(1.1);
+}
+
+.highlight {
+    background-color: #ff4500;
+    color: white;
 }
 
 .words-list {
-    background-color: var(--white);
-    border: 2px solid var(--yellow);
-    border-radius: 8px;
-    padding: 20px;
     margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.words-list h2 {
-    margin-top: 0;
-    color: var(--green);
+h1 {
+    text-align: center;
+    color: #ff8c00;
+    margin-bottom: 20px;
 }
 
-.words-list ul {
+ul {
     list-style-type: none;
     padding: 0;
+    font-size: 18px;
 }
 
-.words-list ul li {
-    padding: 10px 0;
-    font-size: 1.2rem;
+li {
+    margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #314413;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    background-color: #d9f3cf;
+    border: 1px solid #8cb674;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+td:hover {
+    background-color: #ffa500;
+    color: white;
+    transform: scale(1.1);
+}
+
+.highlight {
+    background-color: #005e0c;
+    color: white;
+}
+
+.words-list {
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fffebe;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffbb00;
+    max-width: 250px;
+}
+
+h1 {
+    text-align: center;
+    color: #114900;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "✔";
+    color: #2c5a00;
+    font-weight: bold;
+}

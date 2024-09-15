@@ -4,11 +4,11 @@ body {
     background-color:#FFE26E;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
     align-items: center;
-    border: 1px red solid;
+    
 }
 
 :root {
-    --yellow: #FFE26E;
+    --yellow: #FFE26E; 
     --green1: #244609;
     --green2: #2F5812;
     --green3: #3E7518;
@@ -19,7 +19,6 @@ body {
 .titulo {
     color: #244609;
     font-family: 'Chau Philomene One', sans-serif;
-    border: 1px red solid;
     width: 100%;
     font-size: 90px; 
     text-align: center;
@@ -32,13 +31,11 @@ body {
 }
 
 .sapo {
-    border: 1px red solid;
     float: right;
     max-width: 300px;
 }
 
 .homeicon img {
-    border: 1px red solid;
     width: 70px;
     height: 100%;
     float: left;
@@ -48,7 +45,6 @@ body {
 
 .info1 {
     color: #000000;
-    border: 1px red solid;
     height: 55px;
     width: 95px;
     font-size: 25px;
@@ -58,7 +54,6 @@ body {
 
 .info2 {
     color: #000000;
-    border: 1px red solid;
     height: 55px;
     width: 155px;
     font-size: 25px;
@@ -68,7 +63,6 @@ body {
 
 .conteudo {
     color: #000000;
-    border: 1px red solid;
     height: 55px;
     width: 300px;
     font-size: 25px;
@@ -78,7 +72,6 @@ body {
 
 .afirmacao {
     color: #000000;
-    border: 1px red solid;
     height: 110px;
     width: 350px;
     font-size: 25px;

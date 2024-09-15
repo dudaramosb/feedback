@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #005500;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .carta {
+    background-color: #ffaa00;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir a área da carta sem distorcer */
+    display: none; /* Esconder imagem inicialmente */
+  }
+  
+  .carta.virada img {
+    display: block; /* Mostrar imagem quando carta for virada */
+  }
+  
+  .carta.corretamente {
+    background-color: #228b22;
+    cursor: default;
+  }
+  
+  #vitoria {
+    font-size: 28px;
+    color: #ff0;
+    margin-top: 20px;
+    display: none;
+  }
+
+  #reiniciar {
+    background-color: #ffaa00;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reiniciar:hover {
+    background-color: #ff8800;
+  }
