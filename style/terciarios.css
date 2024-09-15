@@ -23,8 +23,8 @@ body {
 .homelink {
     position: absolute;
     text-decoration: none;
-    top: 10px;
-    left: 10px; 
+    left: 1120px;
+    top: -80px;
 }
 
 .homelink img {

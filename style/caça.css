@@ -160,3 +160,18 @@ li::before {
     color: #2c5a00;
     font-weight: bold;
 }
+
+td.selected {
+    background-color: #ffa500;
+    color: white;
+}
+
+td.highlight {
+    background-color: #005e0c;
+    color: white;
+}
+
+li.found {
+    text-decoration: line-through;
+    color: grey;
+}
