@@ -84,8 +84,8 @@ h1 {
     font-weight: 800;
     cursor: pointer;
     font-size: 20px;
-    margin-right: 90px;
-    margin-left: -280px;
+    margin-right: 300px;
+    margin-left: -250px;
 }
 
 .etapa2 {
@@ -97,7 +97,10 @@ h1 {
     font-weight: 800;
     cursor: pointer;
     font-size: 20px;
-    margin-right: 90px;
+    margin-right: 100px;
+    margin-left: -205px;
+
+    
 }
 
 .etapa3 {
@@ -109,6 +112,8 @@ h1 {
     font-weight: 800;
     cursor: pointer;
     font-size: 20px;
+    margin-right: 170px;
+    margin-left: -20px;
 }
 
 .etapas a {
@@ -129,6 +134,11 @@ h1 {
 }
 
 .etapa3:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.etapa4:hover {
     transform: scale(1.2);
     transition: 0.3s;
 }

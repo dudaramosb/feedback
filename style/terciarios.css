@@ -19,16 +19,52 @@ body {
     overflow: hidden;
     background-size: 100vw;
 }
+body {
+    position: relative; /* Para permitir o posicionamento absoluto dos elementos filhos */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #314413; /* Cor de fundo */
+    font-family: Arial, sans-serif;
+}
+
+.anterior, .proximo {
+    display: inline-block;
+    padding: 16px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(240, 196, 2, 0.814); /* Cor de fundo amarelo */
+    border-radius: 50%;
+    text-decoration: none;
+    user-select: none;
+    position: absolute; /* Posiciona as setas de forma absoluta em relação ao body */
+    top: 50%; /* Posiciona no meio verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+.anterior {
+    left: 20px; /* Coloca a seta à esquerda com margem de 20px */
+}
+
+.proximo {
+    right: 20px; /* Coloca a seta à direita com margem de 20px */
+}
+
 
 .homelink {
     position: absolute;
     text-decoration: none;
     left: 1120px;
-    top: -80px;
+    top: -10px;
 }
 
 .homelink img {
-    width: 200px; 
+    width: 300px; 
     height: auto;
 }
 
@@ -40,10 +76,11 @@ body {
 
 .terci h3 {
     color: var(--yellow);
-    font-size: 2.5rem; 
+    font-size: 4rem; 
     text-align: center;
     font-family: 'Chau Philomene One', sans-serif;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
+    margin-bottom: 75px;
 }
 
 .tercicard {
@@ -57,6 +94,7 @@ body {
     font-weight: 700;
     font-size: 1rem; 
     text-align: center;
+    margin-bottom: 300px;
 }
 
 .navegacao {

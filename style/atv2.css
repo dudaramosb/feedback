@@ -1,19 +1,29 @@
+:root {
+  --backgroundcolor: #314413;
+  --colortitle: #ffca30;
+  --white:#ffffff;
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #005500;
+    background-color: var(--backgroundcolor);
     margin: 0;
     padding: 20px;
     color: #fff;
   }
   
   h1 {
-    font-size: 36px;
+    font-family: 'Chau Philomene One';
+    font-size: 56px;
     margin-bottom: 10px;
+    color: #ffee00;
   }
   
   p {
     font-size: 20px;
+    font-family: 'Chau Philomene One';
     margin-bottom: 20px;
   }
   
@@ -40,12 +50,14 @@ body {
   .carta img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir a área da carta sem distorcer */
-    display: none; /* Esconder imagem inicialmente */
+    object-fit: cover; 
+    display: none;  
+    border-radius: 10px;
   }
+
   
   .carta.virada img {
-    display: block; /* Mostrar imagem quando carta for virada */
+    display: block; 
   }
   
   .carta.corretamente {
@@ -75,3 +87,46 @@ body {
   #reiniciar:hover {
     background-color: #ff8800;
   }
+
+  .homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 1120px;
+    top: -10px;
+}
+
+
+
+.anterior, .proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(240, 196, 2, 0.814);
+  border-radius: 50%;
+  text-decoration: none;
+  user-select: none;
+  pointer-events: auto; 
+}
+
+.anterior {
+  left: 10px; 
+}
+
+.proximo {
+  right: 10px; 
+}
+
+.anterior:hover, .proximo:hover {
+  background-color: rgba(103, 214, 105, 0.8);
+}
+

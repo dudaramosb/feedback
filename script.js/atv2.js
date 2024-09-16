@@ -1,6 +1,6 @@
 const tabuleiro = document.getElementById('tabuleiro');
 const vitoriaMensagem = document.getElementById('vitoria');
-
+const botaoReiniciar = document.getElementById('reiniciar');
 
 const imagensAnimais = [
   'cachorro.png', 'gato.png', 'rato.png', 'coelho.png', 
@@ -11,24 +11,33 @@ let cartas = [...imagensAnimais, ...imagensAnimais];
 let cartasViradas = [];
 let paresCorretos = 0;
 
+function iniciarJogo() {
+ 
+tabuleiro.innerHTML = '';
+
+vitoriaMensagem.style.display = 'none';
+
+cartasViradas = [];
+paresCorretos = 0;
 
 cartas = cartas.sort(() => Math.random() - 0.5);
 
-
 cartas.forEach((animal, index) => {
   const carta = document.createElement('div');
-  carta.classList.add('carta');
-  carta.dataset.animal = animal;
-  carta.dataset.index = index;
+    carta.classList.add('carta');
+    carta.dataset.animal = animal;
+    carta.dataset.index = index;
 
-  const img = document.createElement('img');
-  img.src = `../images/${animal}` ;
-  img.alt = 'Animal';
-  carta.appendChild(img);
+    const img = document.createElement('img');
+    img.src = `../images/${animal}`;
+    img.alt = 'Animal';
+    img.style.display = 'none'; 
+    carta.appendChild(img);
 
-  carta.addEventListener('click', virarCarta);
-  tabuleiro.appendChild(carta);
-});
+    carta.addEventListener('click', virarCarta);
+    tabuleiro.appendChild(carta);
+  });
+}
 
 function virarCarta() {
   if (cartasViradas.length < 2 && !this.classList.contains('corretamente')) {
@@ -63,7 +72,6 @@ function cartasCorretas() {
   cartasViradas = [];
   paresCorretos++;
 
-
   if (paresCorretos === imagensAnimais.length) {
     vitoriaMensagem.style.display = 'block';
   }
@@ -73,11 +81,13 @@ function desvirarCartas() {
   cartasViradas.forEach(carta => {
     carta.classList.remove('virada');
     const img = carta.querySelector('img');
-    img.style.display = 'none'; 
+    img.style.display = 'none';
   });
   cartasViradas = [];
 }
 
+
 botaoReiniciar.addEventListener('click', iniciarJogo);
 
-document.addEventListener('DOMContentLoaded', iniciarJogo);
+
+iniciarJogo();
