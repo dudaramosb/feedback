@@ -76,7 +76,7 @@ function cartasCorretas() {
   if (paresCorretos === imagensAnimais.length) {
     vitoriaMensagem.style.display = 'block';
     pontos += 1;
-    localStorage.setItem("pts-caca", pontos)
+    localStorage.setItem("pts-memo", pontos)
   }
 
   if(paresCorretos == 4){
@@ -95,7 +95,7 @@ function desvirarCartas() {
 
 async function updatePoints() {
   const userId = localStorage.getItem('userId');
-  const pontos = localStorage.getItem('pts-caca');
+  const pontos = localStorage.getItem('pts-memo');
 
   if (!userId || !pontos) {
       console.error('ID do usuário ou pontos não encontrados.');
