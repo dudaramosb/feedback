@@ -1,0 +1,156 @@
+:root {
+    --backgroundcolor: #314413;
+    --colortitle: #ffca30;
+    --white:#ffffff;
+    --amareloclaro: #ffd969;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--backgroundcolor);
+    background-image: url(../images/fundopg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 200px;
+}
+
+.homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 1100px;
+    top: -23px;
+}
+
+.loginlink {
+    position: absolute;
+    text-decoration: none;
+    left: 1780px;
+    top: 50px;
+}
+
+.loginlink img{
+    width: 6rem;
+}
+
+
+h1 {
+    text-align: center;
+    color: var(--colortitle);
+    font-size: 70px;
+    margin-top: 200px;
+    margin-bottom: -70px;
+    font-family: 'Chau Philomene One' ;
+}
+
+
+
+.p1 {
+    color: var(--amareloclaro);
+    font-family: "Chau Philomene One";
+    font-size: 60px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.p2 {
+    color: var(--white);
+    font-family: "Chau Philomene One";
+    font-size: 35px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.etapas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.etapa {
+    background-color: var(--colortitle);
+    color: var(--backgroundcolor);
+    padding: 15px 70px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 300px;
+    margin-left: -250px;
+}
+
+.etapa2 {
+    background-color: var(--colortitle);
+    color: var(--backgroundcolor);
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: -205px;
+
+    
+}
+
+.etapa3 {
+    background-color: var(--colortitle);
+    color: var(--backgroundcolor);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 170px;
+    margin-left: -20px;
+}
+
+.etapas a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--backgroundcolor);
+    font-weight: 800;
+}
+
+.etapa:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.etapa2:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.etapa3:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.etapa4:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}

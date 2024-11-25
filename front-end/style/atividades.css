@@ -1,0 +1,107 @@
+:root {
+    --backgroundcolor: #314413;
+    --colortitle: #ffca30;
+    --white:#ffffff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundcolor);
+    background-image: url(/images/fundoatv.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 1040px;
+    top: 295px;
+}
+
+.loginlink {
+    position: absolute;
+    text-decoration: none;
+    left: 1420px;
+    top: 265px;
+}
+
+.loginlink img{
+    width: 6rem;
+}
+
+
+.p2 {
+    color: var(--white);
+    font-family: "Chau Philomene One";
+    font-size: 35px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+h1 {
+    color: var(--colortitle);
+   font-size: 70px;
+    margin-top: 400px;
+    font-family: 'Chau Philomene One' ;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item img {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 300px;
+    cursor: pointer;
+    margin-right: 200px;
+}
+
+.item2 img {
+    width: 430px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -60px;
+    margin-left: -900px;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.item2 img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  

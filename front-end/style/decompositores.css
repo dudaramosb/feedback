@@ -1,0 +1,132 @@
+:root{
+    --yellow: #ffca30;
+    --green: #314413;
+    --greenf: #1a4b15 ;
+    --white: #EAE8ED;
+}
+ 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/decomp.png);
+    background-color: var(--green);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: 100vw;
+}
+
+html, body {
+    height: 100%;
+    margin-bottom: 500px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginlink {
+    position: absolute;
+    text-decoration: none;
+    left: 1780px;
+    top: 50px;
+}
+
+.loginlink img{
+    width: 6rem;
+}
+
+
+.caixa {
+    background-color: var(--yellow); 
+    padding: 20px 40px; 
+    text-align: center; 
+    border-radius: 8px; 
+    display: inline-block; 
+    margin-bottom: 100px;
+}
+
+
+p {
+    margin: 0; 
+    color: var(--green); 
+    font-size: 24px; 
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+}
+
+
+
+.homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 1120px;
+    top: -10px;
+}
+
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+    color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    margin-bottom: 100px;
+}
+ 
+.botao{
+    font-size: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+
+.navegacao {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none; 
+}
+
+.anterior, .proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(240, 196, 2, 0.814);
+    border-radius: 50%;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: auto; 
+}
+
+.anterior {
+    left: 10px; 
+}
+
+.proximo {
+    right: 10px; 
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(103, 214, 105, 0.8);
+}

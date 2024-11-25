@@ -1,0 +1,142 @@
+:root {
+    --backgroundcolor: #314413;
+    --colortitle: #ffca30;
+    --white:#ffffff;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 11000px;
+    top: 210px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #314413;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.anterior, .proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(240, 196, 2, 0.814);
+    border-radius: 50%;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: auto; 
+}
+
+.anterior {
+    left: 10px; 
+}
+
+.proximo {
+    right: 10px; 
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: rgba(103, 214, 105, 0.8);
+}
+
+
+.homelink img {
+    width: 250px;
+    height: auto;
+}
+
+.homelink {
+    position: absolute;
+    text-decoration: none;
+    left: 1110px;
+    top: -6px;
+}
+
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 24rem;
+}
+
+.inputs input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: none;
+    background: #beb9b9;
+}
+
+button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: var(--colortitle);
+    color: var(--backgroundcolor);
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+a{
+    color: #0e0d0d;
+}
+
+a:hover{
+    color: #757373;
+}
