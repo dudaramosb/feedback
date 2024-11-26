@@ -2,6 +2,7 @@ const tabuleiro = document.getElementById('tabuleiro');
 const vitoriaMensagem = document.getElementById('vitoria');
 const botaoReiniciar = document.getElementById('reiniciar');
 let pontos = 0;
+const apiUrl = 'https://feedback-vl7s.onrender.com/api/updatePointsmemo';
 const imagensAnimais = [
   'cachorro.png', 'gato.png', 'rato.png', 'coelho.png', 
   'raposa.png', 'urso.png', 'panda.png', 'koala.png'
@@ -103,7 +104,7 @@ async function updatePoints() {
   }
 
   try {
-      const response = await fetch('http://localhost:5000/api/updatePoints', {
+      const response = await fetch(`${apiUrl}/api/updatePointsmemo`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

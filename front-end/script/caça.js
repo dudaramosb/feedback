@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pontos = 0;
     let selectedCells = [];
     let gameFinished = false; 
+    const apiUrl = 'https://feedback-vl7s.onrender.com/api/updatePointscaca';
     
     
     wordSearchTable.addEventListener('click', (e) => {
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/updatePoints', {
+            const response = await fetch(`${apiUrl}/api/updatePointscaca`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000/api/rankingcaca';
+const apiUrl = 'https://feedback-vl7s.onrender.com/api/rankingcaca';
 
         
         async function fetchRanking() {

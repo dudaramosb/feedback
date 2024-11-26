@@ -1,6 +1,6 @@
 const form = document.getElementById('loginForm');
 const messageDiv = document.getElementById('message');
- 
+const apiUrl = 'https://feedback-vl7s.onrender.com/api/login'; 
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault(); 
@@ -10,7 +10,7 @@ form.addEventListener('submit', async (event) => {
     const senha = document.getElementById('senha').value;
 
     try {
-        const response = await fetch('http://localhost:5000/api/login', {
+        const response = await fetch(`${apiUrl}/api/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nome, email, senha })

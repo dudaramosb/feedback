@@ -1,6 +1,7 @@
 const form = document.getElementById('cadastroForm');
 const messageDiv = document.getElementById('message');
-    
+const apiUrl = 'https://feedback-vl7s.onrender.com/api/cadastro';
+
     form.addEventListener('submit', async (event) => {
             event.preventDefault(); 
 
@@ -26,7 +27,7 @@ const messageDiv = document.getElementById('message');
             }
         
             try {
-                const response = await fetch('http://localhost:5000/api/cadastro', {
+                const response = await fetch(`${apiUrl}/api/cadastro`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
