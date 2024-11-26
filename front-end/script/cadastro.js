@@ -36,7 +36,7 @@ const apiUrl = 'https://feedback-vl7s.onrender.com/api/cadastro';
                 });
 
                 const result = await response.text();
-                window.location.href = "../paginas/login.html"
+                window.location.href = "../index.html"
             } catch (error) {
                 console.error('Erro ao enviar dados:', error);
                 alert('Erro ao cadastrar usuário');

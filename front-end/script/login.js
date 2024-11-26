@@ -21,12 +21,12 @@ form.addEventListener('submit', async (event) => {
             if (data.id) {
                 localStorage.setItem('userId', data.id);
                 messageDiv.textContent = data.message || 'Login realizado com sucesso';
-                window.location.href = "../paginas/cadeia.html";
+                window.location.href = "../home.html";
             } else {
                 messageDiv.textContent = 'Erro: ID do usuário não encontrado.';
             }
         } else if (response.status === 201) {
-            window.location.href = "../paginas/cadeia.html"; 
+            window.location.href = ".../home.html"; 
         } else {
             messageDiv.style.color = 'red';
             messageDiv.textContent = 'Usuário ou senha inválidos.';

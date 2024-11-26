@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadeia Alimentar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="./style/cadastro.css">
+    <script src="./script/login.js" type="module" defer></script>
 </head>
 <body>
-    <div class="tudo">
-        
-        <h2>Clique para aprender sobre:</h2>
-        <h1>CADEIA ALIMENTAR</h1>
+    
+    
 
-        <button class="btinicio">
-            <a href="paginas/cadeia.html">INICIAR</a>
-        </button>
+    <div class="container">
+    <form action="#" id="loginForm">
+        <div class="inputs">
+            <label for="nome"> Nome de usúario</label>
+            <input type="text" id="nome" placeholder=" Digite o seu nome de usúario" required>
+        </div>
+
+        <div class="inputs">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite o seu email" required>
+        </div>
+
+
+        <div class="inputs">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div>
+            <a href="./cadastro.html">Cadastre-se</a>
+        </div>
+
+        <div class="input-group">
+            <button type="submit">ENTRAR</button>
+        </div>
+
+        <div class="message" id="message"></div>
+    </form>
     </div>
-
 </body>
 </html>
