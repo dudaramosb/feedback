@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pontos = 0;
     let selectedCells = [];
     let gameFinished = false; 
-    const apiUrl = 'https://feedback-vl7s.onrender.com/api/updatePointscaca';
+    const apiUrl = 'https://feedback-vl7s.onrender.com';
     
     
     wordSearchTable.addEventListener('click', (e) => {

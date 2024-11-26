@@ -1,6 +1,6 @@
 const form = document.getElementById('loginForm');
 const messageDiv = document.getElementById('message');
-const apiUrl = 'https://feedback-vl7s.onrender.com/api/login'; 
+const apiUrl = 'https://feedback-vl7s.onrender.com'; 
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault(); 

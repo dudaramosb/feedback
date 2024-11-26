@@ -1,6 +1,6 @@
 const form = document.getElementById('cadastroForm');
 const messageDiv = document.getElementById('message');
-const apiUrl = 'https://feedback-vl7s.onrender.com/api/cadastro';
+const apiUrl = 'https://feedback-vl7s.onrender.com';
 
     form.addEventListener('submit', async (event) => {
             event.preventDefault(); 
